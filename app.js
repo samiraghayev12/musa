@@ -290,8 +290,9 @@ function Speech(say) {
   if ('speechSynthesis' in window && talking) {
     var utterance = new SpeechSynthesisUtterance(say);
     
-    utterance.lang = 'en-EN';
-    
+    utterance.lang = 'id-ID';
+    speechSynthesis.speak(utterance);
+   
   }
 }
 function StartStop(){
